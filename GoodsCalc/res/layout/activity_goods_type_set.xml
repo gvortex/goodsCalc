@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+       android:layout_width="match_parent" 
+       android:layout_height="50dp"
+       >
+       <ImageView android:id="@+id/goodsTypeGoBack"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/navigationbar_back"/>
+         <TextView
+            android:id="@+id/goods_type_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="添加"
+            android:textSize="16sp" />
+   </RelativeLayout>
+    <ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/goodsTypeListView"
+        ></ListView>
+
+</LinearLayout>

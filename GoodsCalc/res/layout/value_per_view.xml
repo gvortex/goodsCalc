@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<TextView android:layout_alignParentLeft="true" android:text="8月9日" android:id="@+id/hourMiniteStr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="60dp" android:layout_marginLeft="10dp"/>
+	<TextView android:layout_toRightOf="@id/hourMiniteStr" android:text="8月8日" android:id="@+id/valPer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="55dp" android:gravity="right"/>
+	<TextView android:layout_toRightOf="@id/valPer" android:paddingLeft="10dp
+	    " android:text="8月7日" android:id="@+id/valMemo" android:singleLine="true" 
+	    android:ellipsize="marquee" android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    />
+<!-- 
+	<TextView android:layout_toRightOf="@id/valMemo" android:layout_alignParentRight="true" 
+	    android:id="@+id/delBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="-50dp"
+	    android:width="40dp"
+	    android:text="删除"
+	    android:textColor="@color/red" /> -->
+
+</RelativeLayout>

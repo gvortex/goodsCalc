@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+   <RelativeLayout
+       android:layout_width="match_parent" 
+       android:layout_height="50dp"
+       >
+       <ImageView android:id="@+id/goBack"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/navigationbar_back"/>
+       <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerInParent="true"
+           >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/goodsTypeNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title"
+            android:text=""
+            android:textSize="18sp" />
+        </RelativeLayout>
+         <TextView
+            android:id="@+id/addNote_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="保存"
+            android:textSize="16sp" />
+   </RelativeLayout>
+   <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1"
+       >
+
+	   <TimePicker
+	       android:id="@+id/valTime"
+	       android:layout_width="match_parent"
+	       android:layout_height="150dp"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginTop="10dp" />
+	
+	   <EditText android:id="@+id/valPer"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginTop="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:hint="请输入吨数"
+		    android:singleLine="true"
+		    android:digits="0123456789. "
+		    />
+	   <EditText android:id="@+id/memoPer"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginTop="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:hint="其它备忘信息"
+		    android:singleLine="false"
+		    />
+	   <ListView android:id="@+id/goodsValListViewPerDay"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content" android:layout_weight="1"></ListView>
+	</LinearLayout>
+</LinearLayout>

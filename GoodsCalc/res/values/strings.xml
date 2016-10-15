@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">运输计数器</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_add_note">添加货物记录</string>
+    <string name="title_activity_goods_type_set">货物类型管理</string>
+</resources>
